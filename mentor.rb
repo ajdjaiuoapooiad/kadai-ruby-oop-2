@@ -2,7 +2,7 @@ class Mentor
   
   attr_accessor :name
   
-  def initialize(name:)
+  def initialize(name)
     @name = name
   end
   
@@ -15,7 +15,7 @@ class RailsMentor < Mentor
   
   attr_accessor :name
   
-  def initialize(name:)
+  def initialize(name)
     @name = name
   end 
   
@@ -24,8 +24,8 @@ class RailsMentor < Mentor
   end
 end
 
-name1 = Mentor.new(name:"煌木")
+name1 = Mentor.new("煌木")
 puts name1.job
 
-name2 = RailsMentor.new(name:"赤出")
+name2 = RailsMentor.new("赤出")
 puts name2.job
